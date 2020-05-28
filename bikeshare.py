@@ -7,6 +7,8 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
+#The above files are included in .gitignore
+
 def get_filters():
 
     """
