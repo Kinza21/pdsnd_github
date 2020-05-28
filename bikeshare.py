@@ -7,6 +7,8 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
+#The above files are included in .gitignore
+
 def get_filters():
 
     """
@@ -29,7 +31,7 @@ def get_filters():
     while city not in city_options:
         city = input('Which city would you like to see the data for? Chicago, New York City or Washington?\n').lower()
         if city not in city_options:
-            print('Choose from Chicago, New York City and Washington!')
+            print('Please choose from Chicago, New York City and Washington!')
 
     # get user input for month (all, january, february, ... , june)
     month_options = ['None', 'January', 'February', 'March', 'April', 'May', 'June']
@@ -87,8 +89,8 @@ def load_data(city, month, day):
     return df
 
 
-#Calculating stats
-def time_stats(df, month, day):
+#Calculating statistics
+def time_statistics(df, month, day):
     """Displays statistics on the most frequent times of travel."""
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
@@ -256,7 +258,7 @@ def main():
             df = load_data(city, month, day)
 
 
-            time_stats(df, month, day)
+            time_statistics(df, month, day)
             station_stats(df)
             trip_duration_stats(df)
             user_stats(df)
