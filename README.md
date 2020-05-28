@@ -4,7 +4,7 @@ Project created May 28th 2020.
 ### Project Title
 Bikeshare.py
 
-### Description
+### Description of project
 Filters bikeshare data according to user input and analyses it
 
 ### Files used
